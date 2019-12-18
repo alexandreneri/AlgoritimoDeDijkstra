@@ -62,7 +62,6 @@ public class Vertice implements Comparable<Vertice> {
 	public void addIncidentes(Aresta incide) {
 		this.incidentes.add(incide);
 		
-		//adicionando vizinhos a lista
 		if ( (incide.getOrigem().getNome().equals(this.getNome())) &&
 				(!this.isVizinho(incide.getDestino())) ){
 			
